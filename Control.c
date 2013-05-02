@@ -56,7 +56,7 @@ int main(int argc, char const *argv[])
 	int d = 0;
 	do //do while loop example
 	{
-		printf("d DOes equal %d while d < 3.\n", d);
+		printf("d Does equal %d while d < 3.\n", d);
 		d++;
 	} while (d < 3);
 

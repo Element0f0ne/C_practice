@@ -2,7 +2,7 @@
 #include <stdarg.h> //Header file needed that contains series of preprocessor macros that
 					//handle parsing lists of parameters into functions.
 
-int calculateTotal(int n, ...)
+int calculateTotal(int n, ...) //Must include elipses (...) to denote that the number of arguments is not fixed.
 {
 	va_list arguments;  //Macro defined data type that stores the list of arguments. (queue data structure)
 	va_start (arguments, n);  //Function that initializes the argument list with the va_list and the first parameter passed to the

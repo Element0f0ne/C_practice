@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 	printf("What is your first string? "); gets(str1);
 	printf("What is your second string? "); gets(str2);
 
-	printf("The length of your first string, %s is %d.\n", str1, strlen(str1)); //Example of strlen
+	printf("The length of your first string, %s is %zd.\n", str1, strlen(str1)); //Example of strlen
 
 	char str3[255];
 	strcpy(str3, str1);

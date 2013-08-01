@@ -24,18 +24,18 @@ bool configFileStore(char* buffer, char* variableName)
 	char fileVariableName[255];
 	int visitIndex;
 	int i;
+
 	
-	fgets(fileBuffer, CFG_FILE_BUFFER_SIZE, _configFilePtr); //store file into buffer
 
 	while(!feof(_configFilePtr)) //While not at end of file
 	{
-		
-		//chomp(fileBuffer); //Cut off newline and carriage return
+		fgets(fileBuffer, CFG_FILE_BUFFER_SIZE, _configFilePtr); //store file into buffer	
+		chomp(fileBuffer); //Cut off newline and carriage return
 
 		if(strlen(fileBuffer) == 0) //Skip if file is empty
 			continue;
 
-		if(fileBuffer[0] = '#') //Skip pound signs
+		if(fileBuffer[0] = '#')
 			continue;
 
 		visitIndex = getIndexOf(fileBuffer, '='); //Get index of =

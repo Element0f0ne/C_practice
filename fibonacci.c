@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int fibonacci(int);
 
 int main(int argc, char const *argv[])
 {
-	int n = 15;
+	int n = atoi(argv[1]) + 1;
 	int i;
-	for (i = 0; i < n; i++)
+	for (i = 1+1; i <= n; i++)
 	{
 		printf("%d ", fibonacci(i));
 	}

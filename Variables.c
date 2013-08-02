@@ -32,4 +32,6 @@ int main(int argc, char const *argv[])
 	printf("x plus y equals %c (character). //'A''s ASCII value: 65 plus 1, which is 'B''s ASCII value of 66.\n", z);
 
 	return 0;
+
+	//Testing change to file for viewing on git repo
 }

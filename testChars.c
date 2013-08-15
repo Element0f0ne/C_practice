@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h> //Showing useful ctype.h functions for testing typs of chars. LOLOLOL
+#include <ctype.h> //Showing useful ctype.h functions for testing types of chars. LOLOLOL
 
 void testCharacters(char* cList) //Takes a char*
 {
@@ -29,11 +29,11 @@ void testCharacters(char* cList) //Takes a char*
 		if(isspace(testChar))
 			printf("'%c' is a Space Character\n", testChar);
 		putchar('\n');
-	}	
+	}
 }
 
 int main(int argc, char const **argv) //Notice **, this allows you to have the argument's pointer to be passed by reference
 {
-	testCharacters(argv[1]); //Pass in the first agurment 
+	testCharacters(argv[1]); //Pass in the first agurment
 	return 0;
 }
